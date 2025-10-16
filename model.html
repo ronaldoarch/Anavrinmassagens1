@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modelo • Anavrin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="brand" href="index.html">Anavrin</a>
+        <nav class="nav">
+          <a href="index.html#modelos">Modelos</a>
+          <a href="index.html#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero hero--small">
+      <div class="container">
+        <h1 id="modelName">Modelo</h1>
+        <p id="modelDesc"></p>
+      </div>
+    </section>
+
+    <main class="container">
+      <div class="back">
+        <a href="index.html#modelos">← Voltar para as modelos</a>
+      </div>
+
+      <div id="gallery" class="gallery"></div>
+    </main>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lightboxClose" class="lightbox__close" aria-label="Fechar">×</button>
+      <img id="lightboxImg" alt="Foto da modelo">
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Anavrin • São Paulo - SP</p>
+      </div>
+    </footer>
+
+    <script src="assets/data/models.js"></script>
+    <script src="assets/js/model.js"></script>
+  </body>
+</html>
